@@ -1,3 +1,5 @@
+@Library('roboshop-shared-library') _
+
 //install seed jenkins refer jenkins job dsl
 pipeline {
   agent any
