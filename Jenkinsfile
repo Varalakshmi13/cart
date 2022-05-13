@@ -1,4 +1,4 @@
-@Library('roboshop-shared-library') _
+@Library('roboshop-shared-library@main') _
 
 //install seed jenkins refer jenkins job dsl
 pipeline {
@@ -8,6 +8,9 @@ pipeline {
      // For Each Commit
     stage('Lint Checks') {
       steps {
+        script {
+          sample.info('Starting','google.com')
+        }
           sh ''' 
           #we commented this because dev is goin =g to check this failure
           #~/node_modules/jslint/bin/jslint.js server.js
