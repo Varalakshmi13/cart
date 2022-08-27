@@ -1,4 +1,8 @@
 module "cart" {
   source = "./vendor/modules/mongodb"
   ENV = var.ENV
+  WORKSTATION_IP = var.WORKSTATION_IP
+  DOCTDB_PORT = var.DOCTDB_PORT
+  DOCDB_INSTANCE_CLASS = var.DOCDB_INSTANCE_CLASS
+  DOCDB_INSTANCE_COUNT = var.DOCDB_INSTANCE_COUNT
 }
