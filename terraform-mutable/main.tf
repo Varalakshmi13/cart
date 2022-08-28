@@ -1,5 +1,5 @@
 module "cart" {
-  source = "./vendor/modules/mongodb"
+  source = "./vendor/modules/app"
   ENV = var.ENV
   INSTANCE_TYPE = var.INSTANCE_TYPE
   SPOT_INSTANCE_COUNT = var.SPOT_INSTANCE_COUNT
